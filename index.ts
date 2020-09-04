@@ -27,6 +27,8 @@ if (!pullRequest) {
 
 const pullNumber: number = (<any>pullRequest)['node_id'];
 
+console.log(pullNumber);
+
 if (requestEvent === 'DISMISS') {
   octokit.pulls
     .listReviews({
